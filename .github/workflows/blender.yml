@@ -1,0 +1,23 @@
+name: blender
+
+on:
+  workflow_dispatch:
+
+jobs:
+  host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+      - name: Host tests
+        env:
+          INSTANCETRACE_BLENDER: ${{ vars.INSTANCETRACE_BLENDER }}
+        run: |
+          if [ -z "${INSTANCETRACE_BLENDER}" ] && ! command -v blender >/dev/null 2>&1; then
+            echo "No Blender executable on this runner. Host tests skip."
+          fi
+          pytest -q tests/test_blender_host.py

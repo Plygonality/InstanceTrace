@@ -1,0 +1,32 @@
+digraph lineage {
+  rankdir=LR;
+  graph [fontname="sans-serif", labelloc=t];
+  node [shape=box, style=filled, fontname="sans-serif", fillcolor="#f4f1ea"];
+  label="InstanceTrace 0xd587c79a52f095ed9d49adfc66978cf5 EXACT";
+  "0xd587c79a52f095ed9d49adfc66978cf5" [fillcolor="#e2b340", label="0xd587c79a52f095ed9d49adfc66978cf5\\nsource Panel_A\\nsample 2"];
+  "0x43d11317c8ce929274ead52958b7d920" [fillcolor="#f4f1ea", label="CREATE\\nsrc:hk.habitat.module"];
+  "0x43d11317c8ce929274ead52958b7d920" -> "0xd587c79a52f095ed9d49adfc66978cf5";
+  "0xc43e866ed552531394e8317bbe1f4964" [fillcolor="#f4f1ea", label="CREATE\\nsrc:hk.habitat.module/src:hk.bay"];
+  "0xc43e866ed552531394e8317bbe1f4964" -> "0x43d11317c8ce929274ead52958b7d920";
+  "0x5e5dffaed0f0e8c57a299634fbe73bf8" [fillcolor="#f4f1ea", label="CREATE\\nsrc:hk.habitat.module/src:hk.bay/src:hk.window_scatter"];
+  "0x5e5dffaed0f0e8c57a299634fbe73bf8" -> "0xc43e866ed552531394e8317bbe1f4964";
+  "0x304d89ecd36b0adf0fc177cd7b20d310" [fillcolor="#f4f1ea", label="DISTRIBUTE\\nsrc:hk.habitat.module/src:hk.bay/src:hk.window_scatter"];
+  "0x304d89ecd36b0adf0fc177cd7b20d310" -> "0x5e5dffaed0f0e8c57a299634fbe73bf8";
+  "0x514949d920b9892c762ac2db7b3e13fa" [fillcolor="#f4f1ea", label="SOURCE_OBJECT\\nsrc:hk.panel_a"];
+  "0x514949d920b9892c762ac2db7b3e13fa" -> "0x304d89ecd36b0adf0fc177cd7b20d310";
+  "0x17826255acf202cb1f1711b47e7c5308" [fillcolor="#f4f1ea", label="INSTANCE\\nsrc:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a"];
+  "0x17826255acf202cb1f1711b47e7c5308" -> "0x514949d920b9892c762ac2db7b3e13fa";
+  "0xa9ae8f14f2d43b16c5309d1ba6b9947d" [fillcolor="#f4f1ea", label="TRANSFORM\\nbay.L"];
+  "0xa9ae8f14f2d43b16c5309d1ba6b9947d" -> "0x17826255acf202cb1f1711b47e7c5308";
+  "0x05845e11679bd4b933209b1a2912c669" [fillcolor="#f4f1ea", label="FILTER\\nbay.L"];
+  "0x05845e11679bd4b933209b1a2912c669" -> "0xa9ae8f14f2d43b16c5309d1ba6b9947d";
+  "0x6e7dbd1dbf8b785cf0348b53d9e4dbc5" [fillcolor="#d5e2d2", label="MERGE"];
+  "0x6e7dbd1dbf8b785cf0348b53d9e4dbc5" -> "0xd587c79a52f095ed9d49adfc66978cf5" [style=dashed, label="contains"];
+  "0xd5903b1986f4b548f3e11a5506b62604" [label="0xd5903b1986f4b548f3e11a5506b62604"];
+  "0xd5903b1986f4b548f3e11a5506b62604" -> "0x6e7dbd1dbf8b785cf0348b53d9e4dbc5";
+  "0x05845e11679bd4b933209b1a2912c669" -> "0x6e7dbd1dbf8b785cf0348b53d9e4dbc5";
+  "0x0c6ea6208d55c50dba65470e21efd0a0" [label="0x0c6ea6208d55c50dba65470e21efd0a0"];
+  "0x0c6ea6208d55c50dba65470e21efd0a0" -> "0x6e7dbd1dbf8b785cf0348b53d9e4dbc5";
+  "0x0b554385e017a5596000101fd7e754f7" [label="0x0b554385e017a5596000101fd7e754f7"];
+  "0x0b554385e017a5596000101fd7e754f7" -> "0x6e7dbd1dbf8b785cf0348b53d9e4dbc5";
+}

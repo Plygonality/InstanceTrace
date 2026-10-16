@@ -1,0 +1,33 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "instance_id": "0xd587c79a52f095ed9d49adfc66978cf5",
+  "origin_status": "PARTIAL_TRACE",
+  "confidence": "PARTIAL",
+  "source_id": "src:hk.panel_a",
+  "source_label": "Panel_A",
+  "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+  "branch_id": "bay.L",
+  "sample_key": 2,
+  "seed": 218,
+  "depsgraph_instances": 40,
+  "attribute_ids": 40,
+  "first_instance_object": "IT_Mullion",
+  "first_persistent_id": [
+    0,
+    2147483647,
+    2147483647,
+    2147483647,
+    2147483647,
+    2147483647,
+    2147483647,
+    2147483647
+  ],
+  "collection_order": [
+    "IT_Mullion",
+    "IT_Panel_A",
+    "IT_Panel_B"
+  ],
+  "saved_blend": false,
+  "paired_instance_object": "IT_Panel_A",
+  "attribute_read_back": true
+}

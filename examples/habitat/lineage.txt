@@ -1,0 +1,47 @@
+Instance 0xd587c79a52f095ed9d49adfc66978cf5
+Origin: EXACT
+Confidence: EXACT
+Capture: SYNTHETIC
+Graph: HK Habitat Module (src:hk.habitat.module)
+Source revision: 0x714c48152edc4c5a25ec0a2df2c335b2
+Revision status: NOT_CHECKED
+Scene: scene:hk.habitat.demo  frame 1  epoch 0
+Manifest seed: 218
+Units: meters (scale 1.000000000)
+Coordinates: right_handed_z_up
+
+Generator path: src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a
+Branch: bay.L
+Sample key: 2 (authored)
+Instance seed: 218
+Source object: Panel_A (src:hk.panel_a)
+Live output: yes
+Exact parent: yes
+Parent logical ids: none
+Containing operation: MERGE parents=0xd5903b1986f4b548f3e11a5506b62604,0x05845e11679bd4b933209b1a2912c669,0x0c6ea6208d55c50dba65470e21efd0a0,0x0b554385e017a5596000101fd7e754f7
+  note: identity-preserving merge; each element keeps its own parent
+
+Operation chain:
+  1. CREATE src:hk.habitat.module
+     group scope
+  2. CREATE src:hk.habitat.module/src:hk.bay
+     group scope
+     parents: 0x43d11317c8ce929274ead52958b7d920
+  3. CREATE src:hk.habitat.module/src:hk.bay/src:hk.window_scatter
+     group scope
+     parents: 0xc43e866ed552531394e8317bbe1f4964
+  4. DISTRIBUTE src:hk.habitat.module/src:hk.bay/src:hk.window_scatter
+     authored sample keys
+     parents: 0x5e5dffaed0f0e8c57a299634fbe73bf8
+  5. SOURCE_OBJECT src:hk.panel_a
+     authored source object
+  6. INSTANCE src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a
+     parents: 0x304d89ecd36b0adf0fc177cd7b20d310, 0x514949d920b9892c762ac2db7b3e13fa
+  7. TRANSFORM bay.L
+     local transform; world matrix is resolved after the program
+     parents: 0x17826255acf202cb1f1711b47e7c5308
+  8. FILTER bay.L
+     survivors stay live; matches become REMOVE rows
+     parents: 0xa9ae8f14f2d43b16c5309d1ba6b9947d
+
+Loss points: none

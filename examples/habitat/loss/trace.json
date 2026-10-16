@@ -1,0 +1,1036 @@
+{
+  "arrays_file": "trace.npz",
+  "checksum": {
+    "algorithm": "blake2b-256",
+    "arrays": "1442dbd8de4fb6494ce17f26c30f657e8aaee8d8acdd371cb4caf12816ddb512",
+    "canonical_trace": "68ed881e8a14047df6292c8b032c7ad16278b74c8389fbdee9f1875754a24ac8"
+  },
+  "manifest_kind": "instancetrace.trace",
+  "trace": {
+    "capture_mode": "SYNTHETIC",
+    "collisions": [],
+    "continuity_policy": "logical-id-v1",
+    "coordinate_system": "right_handed_z_up",
+    "duplicates": [],
+    "epoch": 0,
+    "events": [
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.habitat.module"
+        },
+        "display_path": "HK Habitat Module",
+        "event_id": "0x410cb9176787a2f72306fecc861f1c1e",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.bay"
+        },
+        "display_path": "BayModule",
+        "event_id": "0xb0d29cd8713a09354003137e0d2c67f3",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x410cb9176787a2f72306fecc861f1c1e"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.window_scatter"
+        },
+        "display_path": "WindowScatter",
+        "event_id": "0xff1d93f2912a60b2309846f0503d9815",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xb0d29cd8713a09354003137e0d2c67f3"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.mullion_scatter"
+        },
+        "display_path": "MullionScatter",
+        "event_id": "0x7c6fbee416e8e7af189339b6e0fae03f",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xb0d29cd8713a09354003137e0d2c67f3"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "family": "panels",
+          "source_id": "src:hk.panel_a"
+        },
+        "display_path": "Panel_A",
+        "event_id": "0x83fa1202f03eef7471d24d2e36d26753",
+        "event_type": "SOURCE_OBJECT",
+        "instrumented_path": "src:hk.panel_a",
+        "loss_reason": null,
+        "notes": "authored source object",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "family": "panels",
+          "source_id": "src:hk.panel_b"
+        },
+        "display_path": "Panel_B",
+        "event_id": "0x6c36d5ecf90d2c16e49d44a700a649d4",
+        "event_type": "SOURCE_OBJECT",
+        "instrumented_path": "src:hk.panel_b",
+        "loss_reason": null,
+        "notes": "authored source object",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "family": "mullions",
+          "source_id": "src:hk.mullion"
+        },
+        "display_path": "Mullion",
+        "event_id": "0x06c1f80649a223a88a431406cfa03fc6",
+        "event_type": "SOURCE_OBJECT",
+        "instrumented_path": "src:hk.mullion",
+        "loss_reason": null,
+        "notes": "authored source object",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": null,
+          "branch_id": "bay.L",
+          "count": 12,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0x283402c7e90ede75e60dfecc97bcb583",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xff1d93f2912a60b2309846f0503d9815"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "source_id": "src:hk.panel_a"
+        },
+        "display_path": "Panel_A",
+        "event_id": "0x82d3153e79bf56dc01f2858a2347520c",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x283402c7e90ede75e60dfecc97bcb583",
+          "0x83fa1202f03eef7471d24d2e36d26753"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "source_id": "src:hk.panel_b"
+        },
+        "display_path": "Panel_B",
+        "event_id": "0xece91129fcc71a8cb69ed4950f1d0f4c",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_b",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x283402c7e90ede75e60dfecc97bcb583",
+          "0x6c36d5ecf90d2c16e49d44a700a649d4"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "-4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0xe693ba7bd02a523ec9704319792c2094",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x82d3153e79bf56dc01f2858a2347520c"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "-4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x11ce48a0ccd641c944ba3043c0df6e99",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xece91129fcc71a8cb69ed4950f1d0f4c"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "parent": "0xe693ba7bd02a523ec9704319792c2094",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xa5ea1b693c9c0b672259a60739633e09",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xe693ba7bd02a523ec9704319792c2094"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0xe693ba7bd02a523ec9704319792c2094",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xbe8f5b7d5bfddad54623b1c3b85dcbf7",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xa5ea1b693c9c0b672259a60739633e09"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "parent": "0x11ce48a0ccd641c944ba3043c0df6e99",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x1670e677d86e4663594b9dfec80f0f5c",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x11ce48a0ccd641c944ba3043c0df6e99"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0x11ce48a0ccd641c944ba3043c0df6e99",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x9d6a4cf42cca0af40220c6645605060b",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x1670e677d86e4663594b9dfec80f0f5c"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": "bay.L",
+          "branch_id": "mullion.bay.L",
+          "count": null,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0x5486347c468295da303996b572316491",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x7c6fbee416e8e7af189339b6e0fae03f"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "mullion.bay.L",
+          "source_id": "src:hk.mullion"
+        },
+        "display_path": "Mullion",
+        "event_id": "0x6666f730653e3b45c1029c57d723f28b",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter/src:hk.mullion",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x5486347c468295da303996b572316491",
+          "0x06c1f80649a223a88a431406cfa03fc6"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": true,
+          "per_sample_offset": [
+            "0.000000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "0.000000000",
+            "0.050000000",
+            "-0.200000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x341295aaba88a12a7657f566d07d18fb",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "mullion.bay.L",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x6666f730653e3b45c1029c57d723f28b"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": null,
+          "branch_id": "bay.R",
+          "count": 12,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0x9b69d240deed9aa1364cf1a60955c88f",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xff1d93f2912a60b2309846f0503d9815"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "source_id": "src:hk.panel_a"
+        },
+        "display_path": "Panel_A",
+        "event_id": "0x930c4005de8bb082deff468a5911a257",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x9b69d240deed9aa1364cf1a60955c88f",
+          "0x83fa1202f03eef7471d24d2e36d26753"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "source_id": "src:hk.panel_b"
+        },
+        "display_path": "Panel_B",
+        "event_id": "0xe9ad2368a5baeaf67d36e69b177220b5",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_b",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x9b69d240deed9aa1364cf1a60955c88f",
+          "0x6c36d5ecf90d2c16e49d44a700a649d4"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x1778ca64d02be2e065eaeb73f468d726",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x930c4005de8bb082deff468a5911a257"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x6715050b67597cb0922d68daaa3f0a2f",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xe9ad2368a5baeaf67d36e69b177220b5"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "parent": "0x1778ca64d02be2e065eaeb73f468d726",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xc1d2a1ca13d79e54055c0493462258c4",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x1778ca64d02be2e065eaeb73f468d726"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0x1778ca64d02be2e065eaeb73f468d726",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xf503b3e5b43e5a08bdc049c3c1dae36e",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xc1d2a1ca13d79e54055c0493462258c4"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "parent": "0x6715050b67597cb0922d68daaa3f0a2f",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x91d070d31c1017ce38ae31ebc14937eb",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x6715050b67597cb0922d68daaa3f0a2f"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0x6715050b67597cb0922d68daaa3f0a2f",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xdfb8787af804628d85865901d5cf323a",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x91d070d31c1017ce38ae31ebc14937eb"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": "bay.R",
+          "branch_id": "mullion.bay.R",
+          "count": null,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0xeac5770326c2710d6976c85f98b0cff7",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x7c6fbee416e8e7af189339b6e0fae03f"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "mullion.bay.R",
+          "source_id": "src:hk.mullion"
+        },
+        "display_path": "Mullion",
+        "event_id": "0x57fb40536e4da62cc8e701349b8255c9",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter/src:hk.mullion",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xeac5770326c2710d6976c85f98b0cff7",
+          "0x06c1f80649a223a88a431406cfa03fc6"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": true,
+          "per_sample_offset": [
+            "0.000000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "0.000000000",
+            "0.050000000",
+            "-0.200000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x90ac539b622d6e556a95cac5312c28ee",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "mullion.bay.R",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x57fb40536e4da62cc8e701349b8255c9"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branches": [
+            "bay.L",
+            "bay.R"
+          ],
+          "output_branch": "facade.windows",
+          "preserves_identity": true
+        },
+        "display_path": null,
+        "event_id": "0xd3b1185959ad66033290dce212d411ad",
+        "event_type": "MERGE",
+        "instrumented_path": "facade.windows",
+        "loss_reason": null,
+        "notes": "identity-preserving merge; each element keeps its own parent",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x1670e677d86e4663594b9dfec80f0f5c",
+          "0xa5ea1b693c9c0b672259a60739633e09",
+          "0x91d070d31c1017ce38ae31ebc14937eb",
+          "0xc1d2a1ca13d79e54055c0493462258c4"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branches": [
+            "mullion.bay.L",
+            "mullion.bay.R"
+          ],
+          "output_branch": "facade.mullions",
+          "preserves_identity": true
+        },
+        "display_path": null,
+        "event_id": "0x7b5eb9121b771f43457bc6bedb73b56e",
+        "event_type": "MERGE",
+        "instrumented_path": "facade.mullions",
+        "loss_reason": null,
+        "notes": "identity-preserving merge; each element keeps its own parent",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x341295aaba88a12a7657f566d07d18fb",
+          "0x90ac539b622d6e556a95cac5312c28ee"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "PARTIAL",
+        "config": {
+          "ids_survive": false,
+          "parent": "0x1670e677d86e4663594b9dfec80f0f5c"
+        },
+        "display_path": null,
+        "event_id": "0x8c5232c8d0b67a88ec0bc1869cf8a598",
+        "event_type": "REALIZE",
+        "instrumented_path": "bay.L",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "realization destroys the instance domain",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x1670e677d86e4663594b9dfec80f0f5c"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [
+          "0x1670e677d86e4663594b9dfec80f0f5c"
+        ],
+        "confidence": "AMBIGUOUS",
+        "config": {
+          "operation": "realize",
+          "parent": "0x1670e677d86e4663594b9dfec80f0f5c"
+        },
+        "display_path": null,
+        "event_id": "0xc22459ed7b6dffc2583f80939da117bf",
+        "event_type": "LINEAGE_AMBIGUOUS",
+        "instrumented_path": "bay.L",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "no surviving instance identity; pre-realize event is a candidate, not a proof",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x8c5232c8d0b67a88ec0bc1869cf8a598",
+          "0x1670e677d86e4663594b9dfec80f0f5c"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "PARTIAL",
+        "config": {
+          "ids_survive": false,
+          "parent": "0xa5ea1b693c9c0b672259a60739633e09"
+        },
+        "display_path": null,
+        "event_id": "0x0fd627b9890641ab2aac582fabd786bd",
+        "event_type": "REALIZE",
+        "instrumented_path": "bay.L",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "realization destroys the instance domain",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xa5ea1b693c9c0b672259a60739633e09"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [
+          "0xa5ea1b693c9c0b672259a60739633e09"
+        ],
+        "confidence": "AMBIGUOUS",
+        "config": {
+          "operation": "realize",
+          "parent": "0xa5ea1b693c9c0b672259a60739633e09"
+        },
+        "display_path": null,
+        "event_id": "0xc175c4d75afee9d85f7d3bb972ee374e",
+        "event_type": "LINEAGE_AMBIGUOUS",
+        "instrumented_path": "bay.L",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "no surviving instance identity; pre-realize event is a candidate, not a proof",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x0fd627b9890641ab2aac582fabd786bd",
+          "0xa5ea1b693c9c0b672259a60739633e09"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "PARTIAL",
+        "config": {
+          "ids_survive": false,
+          "parent": "0x91d070d31c1017ce38ae31ebc14937eb"
+        },
+        "display_path": null,
+        "event_id": "0xe4ae111f499f3c4ce99b4030dadcebf7",
+        "event_type": "REALIZE",
+        "instrumented_path": "bay.R",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "realization destroys the instance domain",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x91d070d31c1017ce38ae31ebc14937eb"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [
+          "0x91d070d31c1017ce38ae31ebc14937eb"
+        ],
+        "confidence": "AMBIGUOUS",
+        "config": {
+          "operation": "realize",
+          "parent": "0x91d070d31c1017ce38ae31ebc14937eb"
+        },
+        "display_path": null,
+        "event_id": "0x8349bfe3876d780d99f9cc4780be0759",
+        "event_type": "LINEAGE_AMBIGUOUS",
+        "instrumented_path": "bay.R",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "no surviving instance identity; pre-realize event is a candidate, not a proof",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xe4ae111f499f3c4ce99b4030dadcebf7",
+          "0x91d070d31c1017ce38ae31ebc14937eb"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "PARTIAL",
+        "config": {
+          "ids_survive": false,
+          "parent": "0xc1d2a1ca13d79e54055c0493462258c4"
+        },
+        "display_path": null,
+        "event_id": "0x53b08cbd592833757240244a7a650368",
+        "event_type": "REALIZE",
+        "instrumented_path": "bay.R",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "realization destroys the instance domain",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xc1d2a1ca13d79e54055c0493462258c4"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [
+          "0xc1d2a1ca13d79e54055c0493462258c4"
+        ],
+        "confidence": "AMBIGUOUS",
+        "config": {
+          "operation": "realize",
+          "parent": "0xc1d2a1ca13d79e54055c0493462258c4"
+        },
+        "display_path": null,
+        "event_id": "0x6ad072be89dd1eb19e87aa6a71bce7c8",
+        "event_type": "LINEAGE_AMBIGUOUS",
+        "instrumented_path": "bay.R",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "no surviving instance identity; pre-realize event is a candidate, not a proof",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x53b08cbd592833757240244a7a650368",
+          "0xc1d2a1ca13d79e54055c0493462258c4"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "PARTIAL",
+        "config": {
+          "ids_survive": false,
+          "parent": "0x341295aaba88a12a7657f566d07d18fb"
+        },
+        "display_path": null,
+        "event_id": "0x25c4769ee5900f66056078634cdea894",
+        "event_type": "REALIZE",
+        "instrumented_path": "mullion.bay.L",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "realization destroys the instance domain",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x341295aaba88a12a7657f566d07d18fb"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [
+          "0x341295aaba88a12a7657f566d07d18fb"
+        ],
+        "confidence": "AMBIGUOUS",
+        "config": {
+          "operation": "realize",
+          "parent": "0x341295aaba88a12a7657f566d07d18fb"
+        },
+        "display_path": null,
+        "event_id": "0x8690c8ec502504261a18eef066db3720",
+        "event_type": "LINEAGE_AMBIGUOUS",
+        "instrumented_path": "mullion.bay.L",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "no surviving instance identity; pre-realize event is a candidate, not a proof",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x25c4769ee5900f66056078634cdea894",
+          "0x341295aaba88a12a7657f566d07d18fb"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "PARTIAL",
+        "config": {
+          "ids_survive": false,
+          "parent": "0x90ac539b622d6e556a95cac5312c28ee"
+        },
+        "display_path": null,
+        "event_id": "0xf49048e5e5f6152ed40333b7cd0dc93c",
+        "event_type": "REALIZE",
+        "instrumented_path": "mullion.bay.R",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "realization destroys the instance domain",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x90ac539b622d6e556a95cac5312c28ee"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [
+          "0x90ac539b622d6e556a95cac5312c28ee"
+        ],
+        "confidence": "AMBIGUOUS",
+        "config": {
+          "operation": "realize",
+          "parent": "0x90ac539b622d6e556a95cac5312c28ee"
+        },
+        "display_path": null,
+        "event_id": "0x2737874834b5c5a80a61d00c0a3d9e0b",
+        "event_type": "LINEAGE_AMBIGUOUS",
+        "instrumented_path": "mullion.bay.R",
+        "loss_reason": "REALIZE_INSTANCES",
+        "notes": "no surviving instance identity; pre-realize event is a candidate, not a proof",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xf49048e5e5f6152ed40333b7cd0dc93c",
+          "0x90ac539b622d6e556a95cac5312c28ee"
+        ],
+        "seed": null
+      }
+    ],
+    "frame": 1,
+    "grammar": "instancetrace.grammar.v0.1",
+    "graph_id": "src:hk.habitat.module",
+    "host": {
+      "application": "instancetrace",
+      "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+      "python_version": "3.12.3",
+      "version": "0.1.0"
+    },
+    "instance_count": 44,
+    "labels": {
+      "src:hk.bay": "BayModule",
+      "src:hk.habitat.module": "HK Habitat Module",
+      "src:hk.mullion": "Mullion",
+      "src:hk.mullion_scatter": "MullionScatter",
+      "src:hk.panel_a": "Panel_A",
+      "src:hk.panel_b": "Panel_B",
+      "src:hk.window_scatter": "WindowScatter"
+    },
+    "live_count": 40,
+    "notes": [],
+    "privacy": {
+      "policy": "local-only",
+      "redacted": false,
+      "telemetry": false
+    },
+    "scene_id": "scene:hk.habitat.demo",
+    "seed": 218,
+    "source_revision": "0xd156c96863ad0e923eddc30d58d78a65",
+    "tables": {
+      "branches": [
+        "bay.L",
+        "mullion.bay.L",
+        "bay.R",
+        "mullion.bay.R"
+      ],
+      "confidences": [
+        "EXACT",
+        "PARTIAL",
+        "AMBIGUOUS",
+        "UNKNOWN",
+        "PASSIVE_ONLY"
+      ],
+      "loss_reasons": [
+        "REALIZE_INSTANCES"
+      ],
+      "paths": [
+        "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+        "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_b",
+        "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter/src:hk.mullion"
+      ],
+      "sample_modes": [
+        "authored",
+        "index",
+        "authored_text"
+      ],
+      "sources": [
+        "src:hk.panel_a",
+        "src:hk.panel_b",
+        "src:hk.mullion"
+      ]
+    },
+    "trace_schema_version": "0.1.0",
+    "unit_scale_to_meters": "1.000000000",
+    "units": "meters"
+  },
+  "trace_schema_version": "0.1.0"
+}

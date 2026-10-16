@@ -1,0 +1,63 @@
+Instance 0xd587c79a52f095ed9d49adfc66978cf5
+Origin: LINEAGE_AMBIGUOUS
+Confidence: AMBIGUOUS
+Capture: SYNTHETIC
+Graph: HK Habitat Module (src:hk.habitat.module)
+Source revision: 0xd156c96863ad0e923eddc30d58d78a65
+Revision status: NOT_CHECKED
+Scene: scene:hk.habitat.demo  frame 1  epoch 0
+Manifest seed: 218
+Units: meters (scale 1.000000000)
+Coordinates: right_handed_z_up
+
+Generator path: src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a
+Branch: bay.L
+Sample key: 2 (authored)
+Instance seed: 218
+Source object: Panel_A (src:hk.panel_a)
+Live output: yes
+Exact parent: no
+Parent logical ids: none
+Containing operation: MERGE parents=0x1670e677d86e4663594b9dfec80f0f5c,0xa5ea1b693c9c0b672259a60739633e09,0x91d070d31c1017ce38ae31ebc14937eb,0xc1d2a1ca13d79e54055c0493462258c4
+  note: identity-preserving merge; each element keeps its own parent
+
+Operation chain:
+  1. CREATE src:hk.habitat.module
+     group scope
+  2. CREATE src:hk.habitat.module/src:hk.bay
+     group scope
+     parents: 0x410cb9176787a2f72306fecc861f1c1e
+  3. CREATE src:hk.habitat.module/src:hk.bay/src:hk.window_scatter
+     group scope
+     parents: 0xb0d29cd8713a09354003137e0d2c67f3
+  4. DISTRIBUTE src:hk.habitat.module/src:hk.bay/src:hk.window_scatter
+     authored sample keys
+     parents: 0xff1d93f2912a60b2309846f0503d9815
+  5. SOURCE_OBJECT src:hk.panel_a
+     authored source object
+  6. INSTANCE src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a
+     parents: 0x283402c7e90ede75e60dfecc97bcb583, 0x83fa1202f03eef7471d24d2e36d26753
+  7. TRANSFORM bay.L
+     local transform; world matrix is resolved after the program
+     parents: 0x82d3153e79bf56dc01f2858a2347520c
+  8. FILTER bay.L
+     survivors stay live; matches become REMOVE rows
+     parents: 0xe693ba7bd02a523ec9704319792c2094
+  9. REALIZE bay.L loss=REALIZE_INSTANCES
+     realization destroys the instance domain
+     parents: 0xa5ea1b693c9c0b672259a60739633e09
+  10. LINEAGE_AMBIGUOUS bay.L loss=REALIZE_INSTANCES
+     no surviving instance identity; pre-realize event is a candidate, not a proof
+     parents: 0x0fd627b9890641ab2aac582fabd786bd, 0xa5ea1b693c9c0b672259a60739633e09
+
+Candidate ancestors (none selected as the sole parent):
+  0xa5ea1b693c9c0b672259a60739633e09
+  0x0fd627b9890641ab2aac582fabd786bd
+
+Loss points:
+  REALIZE REALIZE_INSTANCES
+  LINEAGE_AMBIGUOUS REALIZE_INSTANCES
+  ROW REALIZE_INSTANCES
+
+Notes:
+  Row loss reason: REALIZE_INSTANCES.
