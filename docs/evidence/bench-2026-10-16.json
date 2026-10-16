@@ -1,0 +1,40 @@
+{
+  "instancetrace": "0.1.0",
+  "python": "3.12.3",
+  "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "note": "Times are wall time in this process. Peak bytes are tracemalloc peaks, not resident set size. Baseline allocates transforms only. Untested counts are omitted.",
+  "habitat_step_count": 16,
+  "runs": [
+    {
+      "count": 1000,
+      "baseline_seconds": 4.6066999857430346e-05,
+      "instrument_seconds": 0.12077810400000999,
+      "query_seconds": 0.00010993599994435499,
+      "baseline_tracemalloc_peak_bytes": 128096,
+      "instrument_tracemalloc_peak_bytes": 2045795,
+      "manifest_bytes": 26378,
+      "live_count": 1000
+    },
+    {
+      "count": 10000,
+      "baseline_seconds": 3.232599988223228e-05,
+      "instrument_seconds": 1.2521996800001034,
+      "query_seconds": 0.00012168200009909924,
+      "baseline_tracemalloc_peak_bytes": 1280096,
+      "instrument_tracemalloc_peak_bytes": 17435142,
+      "manifest_bytes": 188605,
+      "live_count": 10000
+    },
+    {
+      "count": 100000,
+      "baseline_seconds": 3.2338000210074824e-05,
+      "instrument_seconds": 13.240035863000003,
+      "query_seconds": 0.0001537390000976302,
+      "baseline_tracemalloc_peak_bytes": 12800096,
+      "instrument_tracemalloc_peak_bytes": 181170179,
+      "manifest_bytes": 1810241,
+      "live_count": 100000
+    }
+  ]
+}

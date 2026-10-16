@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>InstanceTrace 0xd587c79a52f095ed9d49adfc66978cf5</title>
+<style>
+  body { margin: 0; background: #f6f3ec; color: #1c1915; font: 16px/1.45 Georgia, serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-weight: 500; letter-spacing: -0.03em; font-size: 28px; }
+  .meta { color: #5c564c; }
+  ol { list-style: none; padding: 0; }
+  li { border-left: 3px solid #1c1915; margin: 0; padding: 10px 14px; }
+  li.loss { border-left-color: #9c3b2e; background: #f8ebe7; }
+  code { font-family: ui-monospace, monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="meta">InstanceTrace lineage</p>
+  <h1><code>0xd587c79a52f095ed9d49adfc66978cf5</code></h1>
+  <p>Origin <strong>EXACT</strong>. Source object <strong>Panel_A</strong>.</p>
+  <p>Path <code>src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a</code></p>
+  <p>Branch bay.L,
+     sample 2
+     (authored),
+     seed 218.</p>
+  <h2>Operations</h2>
+  <ol>
+  <li class="step"><strong>CREATE</strong> src:hk.habitat.module <br><span>group scope</span></li>
+<li class="step"><strong>CREATE</strong> src:hk.habitat.module/src:hk.bay <br><span>group scope</span></li>
+<li class="step"><strong>CREATE</strong> src:hk.habitat.module/src:hk.bay/src:hk.window_scatter <br><span>group scope</span></li>
+<li class="step"><strong>DISTRIBUTE</strong> src:hk.habitat.module/src:hk.bay/src:hk.window_scatter <br><span>authored sample keys</span></li>
+<li class="step"><strong>SOURCE_OBJECT</strong> src:hk.panel_a <br><span>authored source object</span></li>
+<li class="step"><strong>INSTANCE</strong> src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a <br><span></span></li>
+<li class="step"><strong>TRANSFORM</strong> bay.L <br><span>local transform; world matrix is resolved after the program</span></li>
+<li class="step"><strong>FILTER</strong> bay.L <br><span>survivors stay live; matches become REMOVE rows</span></li>
+  </ol>
+  
+  <h2>Regeneration comparison</h2><p>REVISION_DIVERGED, SEED_CHANGED, PERSISTED_UNDER_REVISION_CHANGE, PARTIAL_PERSISTENCE</p><ul><li>Persisted 22</li><li>Added 22</li><li>Removed 22</li><li>Same slot, new id 22</li></ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,220 @@
+{
+  "graph_id": "src:hk.habitat.module",
+  "namespace": "plygonality.instancetrace.hk.habitat",
+  "seed": 218,
+  "units": "meters",
+  "unit_scale_to_meters": "1.000000000",
+  "coordinate_system": "right_handed_z_up",
+  "groups": [
+    {
+      "id": "src:hk.habitat.module",
+      "parent": null
+    },
+    {
+      "id": "src:hk.bay",
+      "parent": "src:hk.habitat.module"
+    },
+    {
+      "id": "src:hk.window_scatter",
+      "parent": "src:hk.bay"
+    },
+    {
+      "id": "src:hk.mullion_scatter",
+      "parent": "src:hk.bay"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src:hk.panel_a",
+      "family": "panels"
+    },
+    {
+      "id": "src:hk.panel_b",
+      "family": "panels"
+    },
+    {
+      "id": "src:hk.mullion",
+      "family": "mullions"
+    }
+  ],
+  "steps": [
+    {
+      "op": "distribute",
+      "id": "dist-bay.L",
+      "branch": "bay.L",
+      "group": "src:hk.window_scatter",
+      "mode": "authored",
+      "count": 12,
+      "align": null,
+      "seed": 218
+    },
+    {
+      "op": "instance",
+      "id": "inst-bay.L",
+      "branch": "bay.L",
+      "group": "src:hk.window_scatter",
+      "sources": [
+        "src:hk.panel_a",
+        "src:hk.panel_b"
+      ]
+    },
+    {
+      "op": "transform",
+      "id": "xf-bay.L",
+      "branch": "bay.L",
+      "translation": [
+        "-4.000000000",
+        "0.000000000",
+        "1.500000000"
+      ],
+      "per_sample_offset": [
+        "0.800000000",
+        "0.000000000",
+        "0.000000000"
+      ],
+      "scale": "1.000000000",
+      "compose_parent": false
+    },
+    {
+      "op": "filter",
+      "id": "filter-bay.L",
+      "branch": "bay.L",
+      "predicate": "sample_key % 11 == 0"
+    },
+    {
+      "op": "distribute",
+      "id": "dist-mullion-bay.L",
+      "branch": "mullion.bay.L",
+      "group": "src:hk.mullion_scatter",
+      "mode": "authored",
+      "count": null,
+      "align": "bay.L",
+      "seed": 218
+    },
+    {
+      "op": "instance",
+      "id": "inst-mullion-bay.L",
+      "branch": "mullion.bay.L",
+      "group": "src:hk.mullion_scatter",
+      "sources": [
+        "src:hk.mullion"
+      ]
+    },
+    {
+      "op": "transform",
+      "id": "xf-mullion-bay.L",
+      "branch": "mullion.bay.L",
+      "translation": [
+        "0.000000000",
+        "0.050000000",
+        "-0.200000000"
+      ],
+      "per_sample_offset": [
+        "0.000000000",
+        "0.000000000",
+        "0.000000000"
+      ],
+      "scale": "1.000000000",
+      "compose_parent": true
+    },
+    {
+      "op": "distribute",
+      "id": "dist-bay.R",
+      "branch": "bay.R",
+      "group": "src:hk.window_scatter",
+      "mode": "authored",
+      "count": 12,
+      "align": null,
+      "seed": 218
+    },
+    {
+      "op": "instance",
+      "id": "inst-bay.R",
+      "branch": "bay.R",
+      "group": "src:hk.window_scatter",
+      "sources": [
+        "src:hk.panel_a",
+        "src:hk.panel_b"
+      ]
+    },
+    {
+      "op": "transform",
+      "id": "xf-bay.R",
+      "branch": "bay.R",
+      "translation": [
+        "4.000000000",
+        "0.000000000",
+        "1.500000000"
+      ],
+      "per_sample_offset": [
+        "0.800000000",
+        "0.000000000",
+        "0.000000000"
+      ],
+      "scale": "1.000000000",
+      "compose_parent": false
+    },
+    {
+      "op": "filter",
+      "id": "filter-bay.R",
+      "branch": "bay.R",
+      "predicate": "sample_key % 11 == 0"
+    },
+    {
+      "op": "distribute",
+      "id": "dist-mullion-bay.R",
+      "branch": "mullion.bay.R",
+      "group": "src:hk.mullion_scatter",
+      "mode": "authored",
+      "count": null,
+      "align": "bay.R",
+      "seed": 218
+    },
+    {
+      "op": "instance",
+      "id": "inst-mullion-bay.R",
+      "branch": "mullion.bay.R",
+      "group": "src:hk.mullion_scatter",
+      "sources": [
+        "src:hk.mullion"
+      ]
+    },
+    {
+      "op": "transform",
+      "id": "xf-mullion-bay.R",
+      "branch": "mullion.bay.R",
+      "translation": [
+        "0.000000000",
+        "0.050000000",
+        "-0.200000000"
+      ],
+      "per_sample_offset": [
+        "0.000000000",
+        "0.000000000",
+        "0.000000000"
+      ],
+      "scale": "1.000000000",
+      "compose_parent": true
+    },
+    {
+      "op": "merge",
+      "id": "merge-windows",
+      "branches": [
+        "bay.L",
+        "bay.R"
+      ],
+      "output": "facade.windows",
+      "preserves_identity": true
+    },
+    {
+      "op": "merge",
+      "id": "merge-mullions",
+      "branches": [
+        "mullion.bay.L",
+        "mullion.bay.R"
+      ],
+      "output": "facade.mullions",
+      "preserves_identity": true
+    }
+  ]
+}

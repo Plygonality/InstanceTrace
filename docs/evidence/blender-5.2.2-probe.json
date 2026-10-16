@@ -1,0 +1,133 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "notes": [
+    "before_realize: instances=4 attributes=['position', '.edge_verts', '.corner_vert', '.corner_edge']",
+    "after_realize it_lid_0 domain=POINT count=16 head=[100, 100, 100, 100, 101, 101, 101, 101, 102, 102, 102, 102, 103, 103, 103, 103]",
+    "after_realize: instances=0 attributes=['position', '.edge_verts', '.corner_vert', '.corner_edge', '.select_vert', 'it_lid_0', '.select_poly', 'sharp_face', '.select_edge']",
+    "after_edit it_lid_0 domain=POINT count=16 head=[100, 100, 100, 100, 101, 101, 101, 101, 102, 102, 102, 102, 103, 103, 103, 103]",
+    "after_edit: instances=0 attributes=['position', '.edge_verts', '.corner_vert', '.corner_edge', '.select_vert', '.select_poly', 'sharp_face', '.select_edge', 'it_lid_0']",
+    "persistent_id values above are motion-blur matchers captured in this session; they are not logical ids."
+  ],
+  "attribute_data_types": [
+    "FLOAT",
+    "INT",
+    "BOOLEAN",
+    "FLOAT_VECTOR",
+    "FLOAT_COLOR",
+    "QUATERNION",
+    "FLOAT4X4",
+    "STRING",
+    "INT8",
+    "INT16_2D",
+    "INT32_2D",
+    "FLOAT2",
+    "FLOAT4",
+    "BYTE_COLOR"
+  ],
+  "attribute_domains": [
+    "POINT",
+    "EDGE",
+    "FACE",
+    "CORNER",
+    "CURVE",
+    "INSTANCE",
+    "LAYER"
+  ],
+  "string_attribute": "failed: bpy_struct: item.attr = val: StringAttributeValue.value expected a bytes type, not str",
+  "instance_domain_on_mesh": "failed: Error: Attribute domain not supported by this geometry type\n",
+  "instances_before_realize": [
+    {
+      "index": 6,
+      "is_instance": true,
+      "object": "IT_Scatter",
+      "parent": "IT_Scatter",
+      "persistent_id": [
+        0,
+        0,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "random_id": 1706653194,
+      "translation": [
+        0.0,
+        0.0,
+        1.5
+      ]
+    },
+    {
+      "index": 7,
+      "is_instance": true,
+      "object": "IT_Scatter",
+      "parent": "IT_Scatter",
+      "persistent_id": [
+        0,
+        1,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "random_id": 1804490024,
+      "translation": [
+        0.800000011920929,
+        0.0,
+        1.5
+      ]
+    },
+    {
+      "index": 8,
+      "is_instance": true,
+      "object": "IT_Scatter",
+      "parent": "IT_Scatter",
+      "persistent_id": [
+        0,
+        2,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "random_id": 1566774102,
+      "translation": [
+        1.600000023841858,
+        0.0,
+        1.5
+      ]
+    },
+    {
+      "index": 9,
+      "is_instance": true,
+      "object": "IT_Scatter",
+      "parent": "IT_Scatter",
+      "persistent_id": [
+        0,
+        3,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "random_id": -1185792493,
+      "translation": [
+        2.4000000953674316,
+        0.0,
+        1.5
+      ]
+    }
+  ],
+  "nested_group": {
+    "outer": "IT_Habitat",
+    "inner": "IT_WindowScatter",
+    "group_node": "GeometryNodeGroup"
+  }
+}

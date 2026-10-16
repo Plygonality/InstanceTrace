@@ -1,0 +1,788 @@
+{
+  "arrays_file": "trace.npz",
+  "checksum": {
+    "algorithm": "blake2b-256",
+    "arrays": "abf6c924f5a88e0fc9b8369543ceeb48e8b68021767649fb5ed28b5971d85f6f",
+    "canonical_trace": "99e71bdbebe32e56ac91ed6cda26f3be08fac11c42e19ec9b09c9e96f6224ce2"
+  },
+  "manifest_kind": "instancetrace.trace",
+  "trace": {
+    "capture_mode": "SYNTHETIC",
+    "collisions": [],
+    "continuity_policy": "logical-id-v1",
+    "coordinate_system": "right_handed_z_up",
+    "duplicates": [],
+    "epoch": 0,
+    "events": [
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.habitat.module"
+        },
+        "display_path": "HK Habitat Module",
+        "event_id": "0xca8f0b9031965c43a2c22cab182fe4ba",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.bay"
+        },
+        "display_path": "BayModule",
+        "event_id": "0xe4cdc34786959be5764ba2c4a287ec76",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xca8f0b9031965c43a2c22cab182fe4ba"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.window_scatter"
+        },
+        "display_path": "WindowScatter",
+        "event_id": "0xc8abbe175754561dca75a5836e9a41a2",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xe4cdc34786959be5764ba2c4a287ec76"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "group_id": "src:hk.mullion_scatter"
+        },
+        "display_path": "MullionScatter",
+        "event_id": "0x0948116108d7ac73f4968155e8be33a6",
+        "event_type": "CREATE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter",
+        "loss_reason": null,
+        "notes": "group scope",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xe4cdc34786959be5764ba2c4a287ec76"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "family": "panels",
+          "source_id": "src:hk.panel_a"
+        },
+        "display_path": "Panel_A",
+        "event_id": "0x630c7405942c9b6fa79044960708d5fc",
+        "event_type": "SOURCE_OBJECT",
+        "instrumented_path": "src:hk.panel_a",
+        "loss_reason": null,
+        "notes": "authored source object",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "family": "panels",
+          "source_id": "src:hk.panel_b"
+        },
+        "display_path": "Panel_B",
+        "event_id": "0x3fcd5b9adcbdd998f33f743f5c03f5fc",
+        "event_type": "SOURCE_OBJECT",
+        "instrumented_path": "src:hk.panel_b",
+        "loss_reason": null,
+        "notes": "authored source object",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "family": "mullions",
+          "source_id": "src:hk.mullion"
+        },
+        "display_path": "Mullion",
+        "event_id": "0x6f119a91bee13f5267dc47c246996f0f",
+        "event_type": "SOURCE_OBJECT",
+        "instrumented_path": "src:hk.mullion",
+        "loss_reason": null,
+        "notes": "authored source object",
+        "ordinal": 0,
+        "parent_event_ids": [],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": null,
+          "branch_id": "bay.L",
+          "count": 12,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0x1c79a4d509098d7ff1101e2f4bb301db",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xc8abbe175754561dca75a5836e9a41a2"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "source_id": "src:hk.panel_a"
+        },
+        "display_path": "Panel_A",
+        "event_id": "0x77071521e1682a150673f1a2a4c9319d",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x1c79a4d509098d7ff1101e2f4bb301db",
+          "0x630c7405942c9b6fa79044960708d5fc"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "source_id": "src:hk.panel_b"
+        },
+        "display_path": "Panel_B",
+        "event_id": "0x5cdc00b33a7e2c83d053b48a7e28041a",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_b",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x1c79a4d509098d7ff1101e2f4bb301db",
+          "0x3fcd5b9adcbdd998f33f743f5c03f5fc"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "-4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x4070986204652510fee11e4c4d3a7aeb",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x77071521e1682a150673f1a2a4c9319d"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "-4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x07395b77a679ac583f5f4f63592e38c4",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x5cdc00b33a7e2c83d053b48a7e28041a"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "parent": "0x4070986204652510fee11e4c4d3a7aeb",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xfff6b897780116f2509cd5ad913a038e",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x4070986204652510fee11e4c4d3a7aeb"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0x4070986204652510fee11e4c4d3a7aeb",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x25949c9b1a077439805eb2c59059c043",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xfff6b897780116f2509cd5ad913a038e"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.L",
+          "parent": "0x07395b77a679ac583f5f4f63592e38c4",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xea5c0c2a00a4962f54af1ba9ef01570f",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x07395b77a679ac583f5f4f63592e38c4"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0x07395b77a679ac583f5f4f63592e38c4",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x00679b6f87ab0d86eb5f1f5615316d44",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.L",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xea5c0c2a00a4962f54af1ba9ef01570f"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": "bay.L",
+          "branch_id": "mullion.bay.L",
+          "count": null,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0x05b7b17eb26f4f739db888a3a660c51d",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x0948116108d7ac73f4968155e8be33a6"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "mullion.bay.L",
+          "source_id": "src:hk.mullion"
+        },
+        "display_path": "Mullion",
+        "event_id": "0x39d6057f2ace3cfcb4184b6a4c24628e",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter/src:hk.mullion",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x05b7b17eb26f4f739db888a3a660c51d",
+          "0x6f119a91bee13f5267dc47c246996f0f"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": true,
+          "per_sample_offset": [
+            "0.000000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "0.000000000",
+            "0.050000000",
+            "-0.200000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x91421fd3cf03739dfe4ac3cb02f8e7d1",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "mullion.bay.L",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x39d6057f2ace3cfcb4184b6a4c24628e"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": null,
+          "branch_id": "bay.R",
+          "count": 12,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0x30e60c350e13b5d387c595cc19386e94",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xc8abbe175754561dca75a5836e9a41a2"
+        ],
+        "seed": 219
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "source_id": "src:hk.panel_a"
+        },
+        "display_path": "Panel_A",
+        "event_id": "0x46ccdd36fddc0c754703201123b6fd51",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x30e60c350e13b5d387c595cc19386e94",
+          "0x630c7405942c9b6fa79044960708d5fc"
+        ],
+        "seed": 219
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "source_id": "src:hk.panel_b"
+        },
+        "display_path": "Panel_B",
+        "event_id": "0x4dcdca1380fdc3791e50b2bfe095dc23",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_b",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x30e60c350e13b5d387c595cc19386e94",
+          "0x3fcd5b9adcbdd998f33f743f5c03f5fc"
+        ],
+        "seed": 219
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x47c0275a3b86e511b74fb6ab23a2c4ff",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x46ccdd36fddc0c754703201123b6fd51"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": false,
+          "per_sample_offset": [
+            "0.800000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "4.000000000",
+            "0.000000000",
+            "1.500000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0xa3e92f72187fac8837f6f2f9d2515874",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x4dcdca1380fdc3791e50b2bfe095dc23"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "parent": "0x47c0275a3b86e511b74fb6ab23a2c4ff",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xa248fb32c184bc39a5915f2bee326a95",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x47c0275a3b86e511b74fb6ab23a2c4ff"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0x47c0275a3b86e511b74fb6ab23a2c4ff",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x583713f6669772143eca52b733ac868e",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xa248fb32c184bc39a5915f2bee326a95"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "bay.R",
+          "parent": "0xa3e92f72187fac8837f6f2f9d2515874",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0xf3f37debd939363fd537e3104a26c2b9",
+        "event_type": "FILTER",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "survivors stay live; matches become REMOVE rows",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xa3e92f72187fac8837f6f2f9d2515874"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "parent": "0xa3e92f72187fac8837f6f2f9d2515874",
+          "predicate": "sample_key % 11 == 0"
+        },
+        "display_path": null,
+        "event_id": "0x60e36169e5ba05145c2dfdc98f750845",
+        "event_type": "REMOVE",
+        "instrumented_path": "bay.R",
+        "loss_reason": null,
+        "notes": "filtered before the live output",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xf3f37debd939363fd537e3104a26c2b9"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "align_to_branch": "bay.R",
+          "branch_id": "mullion.bay.R",
+          "count": null,
+          "mode": "authored"
+        },
+        "display_path": null,
+        "event_id": "0xc5cc0e4964ca42b450e8a9229920b712",
+        "event_type": "DISTRIBUTE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter",
+        "loss_reason": null,
+        "notes": "authored sample keys",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x0948116108d7ac73f4968155e8be33a6"
+        ],
+        "seed": 219
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branch_id": "mullion.bay.R",
+          "source_id": "src:hk.mullion"
+        },
+        "display_path": "Mullion",
+        "event_id": "0x6fd7a3b1870a0a88145de6ea21fadba6",
+        "event_type": "INSTANCE",
+        "instrumented_path": "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter/src:hk.mullion",
+        "loss_reason": null,
+        "notes": "",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xc5cc0e4964ca42b450e8a9229920b712",
+          "0x6f119a91bee13f5267dc47c246996f0f"
+        ],
+        "seed": 219
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "compose_parent": true,
+          "per_sample_offset": [
+            "0.000000000",
+            "0.000000000",
+            "0.000000000"
+          ],
+          "scale": "1.000000000",
+          "translation": [
+            "0.000000000",
+            "0.050000000",
+            "-0.200000000"
+          ]
+        },
+        "display_path": null,
+        "event_id": "0x5e70703ad3ce803dab8a39b598bcfbaa",
+        "event_type": "TRANSFORM",
+        "instrumented_path": "mullion.bay.R",
+        "loss_reason": null,
+        "notes": "local transform; world matrix is resolved after the program",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x6fd7a3b1870a0a88145de6ea21fadba6"
+        ],
+        "seed": null
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branches": [
+            "bay.L",
+            "bay.R"
+          ],
+          "output_branch": "facade.windows",
+          "preserves_identity": true
+        },
+        "display_path": null,
+        "event_id": "0x64308ad7bcdffb1733d35621af08f13a",
+        "event_type": "MERGE",
+        "instrumented_path": "facade.windows",
+        "loss_reason": null,
+        "notes": "identity-preserving merge; each element keeps its own parent",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0xea5c0c2a00a4962f54af1ba9ef01570f",
+          "0xfff6b897780116f2509cd5ad913a038e",
+          "0xf3f37debd939363fd537e3104a26c2b9",
+          "0xa248fb32c184bc39a5915f2bee326a95"
+        ],
+        "seed": 218
+      },
+      {
+        "candidate_ancestor_ids": [],
+        "confidence": "EXACT",
+        "config": {
+          "branches": [
+            "mullion.bay.L",
+            "mullion.bay.R"
+          ],
+          "output_branch": "facade.mullions",
+          "preserves_identity": true
+        },
+        "display_path": null,
+        "event_id": "0x2d8d09a24cd70e27034bd06bc206c808",
+        "event_type": "MERGE",
+        "instrumented_path": "facade.mullions",
+        "loss_reason": null,
+        "notes": "identity-preserving merge; each element keeps its own parent",
+        "ordinal": 0,
+        "parent_event_ids": [
+          "0x91421fd3cf03739dfe4ac3cb02f8e7d1",
+          "0x5e70703ad3ce803dab8a39b598bcfbaa"
+        ],
+        "seed": 218
+      }
+    ],
+    "frame": 1,
+    "grammar": "instancetrace.grammar.v0.1",
+    "graph_id": "src:hk.habitat.module",
+    "host": {
+      "application": "instancetrace",
+      "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+      "python_version": "3.12.3",
+      "version": "0.1.0"
+    },
+    "instance_count": 44,
+    "labels": {
+      "src:hk.bay": "BayModule",
+      "src:hk.habitat.module": "HK Habitat Module",
+      "src:hk.mullion": "Mullion",
+      "src:hk.mullion_scatter": "MullionScatter",
+      "src:hk.panel_a": "Panel_A",
+      "src:hk.panel_b": "Panel_B",
+      "src:hk.window_scatter": "WindowScatter"
+    },
+    "live_count": 40,
+    "notes": [],
+    "privacy": {
+      "policy": "local-only",
+      "redacted": false,
+      "telemetry": false
+    },
+    "scene_id": "scene:hk.habitat.demo",
+    "seed": 218,
+    "source_revision": "0x93f85696f1ec10e29c7edb5cd58768d2",
+    "tables": {
+      "branches": [
+        "bay.L",
+        "mullion.bay.L",
+        "bay.R",
+        "mullion.bay.R"
+      ],
+      "confidences": [
+        "EXACT",
+        "PARTIAL",
+        "AMBIGUOUS",
+        "UNKNOWN",
+        "PASSIVE_ONLY"
+      ],
+      "loss_reasons": [],
+      "paths": [
+        "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_a",
+        "src:hk.habitat.module/src:hk.bay/src:hk.window_scatter/src:hk.panel_b",
+        "src:hk.habitat.module/src:hk.bay/src:hk.mullion_scatter/src:hk.mullion"
+      ],
+      "sample_modes": [
+        "authored",
+        "index",
+        "authored_text"
+      ],
+      "sources": [
+        "src:hk.panel_a",
+        "src:hk.panel_b",
+        "src:hk.mullion"
+      ]
+    },
+    "trace_schema_version": "0.1.0",
+    "unit_scale_to_meters": "1.000000000",
+    "units": "meters"
+  },
+  "trace_schema_version": "0.1.0"
+}

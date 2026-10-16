@@ -1,0 +1,11 @@
+schema_version = "1.0.0"
+
+id = "plygonality_instancetrace"
+version = "0.1.0"
+name = "InstanceTrace"
+tagline = "Query provenance for supported procedural instances"
+maintainer = "Plygonality"
+type = "add-on"
+tags = ["Geometry Nodes", "Pipeline"]
+blender_version_min = "4.2.0"
+license = ["SPDX:MIT"]
